@@ -5,7 +5,7 @@
   "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "webpack --mode development --watch",
+    "start": "webpack-dev-server --mode development --open",
     "build": "webpack --mode production --watch"
   },
   "author": "Charles Fournier",
@@ -31,6 +31,7 @@
     "style-loader": "^0.23.0",
     "webpack": "^4.20.1",
     "webpack-cli": "^3.1.1",
+    "webpack-dev-server": "^3.1.9",
     "webpack-manifest-plugin": "^2.0.4",
     "webpack-md5-hash": "0.0.6"
   }

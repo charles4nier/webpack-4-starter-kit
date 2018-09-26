@@ -4,8 +4,7 @@
 * Git clone or copy/paste the project
 * 'cd your_project_name'
 * 'npm install'
-* 'npm run dev' to start dev mode or 'npm run build' to build your project
+* 'npm run start' to start server and run development mode
 * Work in 'src/assets' folder
-* Web dev server will come later, for the moment, run index.html (./dist folder)
-
-
+* 'npm run build' to build your project (will build a "dist" folder)
+* Export the dist folder if u want to deploy your app

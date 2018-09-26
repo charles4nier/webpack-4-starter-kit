@@ -7,6 +7,12 @@ const WebpackMd5Hash = require('webpack-md5-hash');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
+  devServer: {
+    contentBase: path.join(__dirname, 'dist'),
+    compress: true,
+    port: 9000,
+    open: true
+  },
   entry: {app: path.resolve(__dirname, 'src', 'app')},
   output: {
     path: path.resolve(__dirname, 'dist'),
