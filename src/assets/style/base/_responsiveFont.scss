@@ -1,0 +1,3 @@
+@function responsiveFont($minFont, $minScreen, $percentValue) {  
+ @return calc(#{$minFont} + ((100vw - #{$minScreen}) * #{$percentValue} / 100));  
+}

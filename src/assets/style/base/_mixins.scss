@@ -1,0 +1,28 @@
+// test
+
+@mixin flexMixin() {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+@mixin flexDirMixin($direction) {
+    @include flexMixin();
+    flex-direction: $direction;
+}
+
+@mixin flexAlign($direction, $justify, $alginment) {
+    @include flexDirMixin($direction);
+    justify-content: $justify;
+    align-items: $alginment;
+}
+
+
+@mixin importFont($fontName, $file){
+    @font-face {
+    font-family: "#{$fontName}";
+    src:  url('../fonts/#{$file}');
+  }
+}
